@@ -108,12 +108,12 @@ Main Slider
   input {
 
     + span {
-      padding-left: $scrubber-width-default * 2;
+      padding-left: calc($scrubber-width-default * 2);
 
       &:before {
         content: "";
         height: $scrubber-width-default;
-        width: $scrubber-width-default * 2;
+        width: calc($scrubber-width-default * 2);
         background: rgba(100, 100, 100, .2);
         box-shadow: inset 0 0 5px rgba(0, 0, 0, .8);
         transition: background .2s ease-out;
@@ -246,8 +246,8 @@ Slider A
     }
 
     + span:after {
-      width: $scrubber-width-default * 2;
-      font-size: $scrubber-width-default / 2;
+      width: calc($scrubber-width-default * 2);
+      font-size: calc($scrubber-width-default / 2);
       color: $slider-text-unchecked-color;
       content: $slider-text-unchecked;
       border: solid transparent 1px;
@@ -282,7 +282,7 @@ Slider A SIZES
 
     input + span:after {
       width: $scrubber-width-sm * 2;
-      font-size: $scrubber-width-sm / 2;
+      font-size: calc($scrubber-width-sm / 2);
     }
     input:checked + span:after {
       margin-left: $scrubber-width-sm;
@@ -301,7 +301,7 @@ Slider A SIZES
 
     input + span:after {
       width: $scrubber-width-md * 2;
-      font-size: $scrubber-width-md / 2;
+      font-size: calc(calc($scrubber-width-md / 2));
     }
     input:checked + span:after {
       margin-left: $scrubber-width-md;
@@ -320,7 +320,7 @@ Slider A SIZES
 
     input + span:after {
       width: $scrubber-width-lg * 2;
-      font-size: $scrubber-width-lg / 2;
+      font-size: calc(calc($scrubber-width-lg / 2));
     }
 
     input:checked + span:after {
@@ -339,12 +339,12 @@ Slider B
   input {
 
     + span {
-      padding-left: $scrubber-width-default * 2;
+      padding-left: calc($scrubber-width-default * 2);
     }
 
     + span:before {
       border-radius: $scrubber-width-default;
-      width: $scrubber-width-default * 2;
+      width: calc($scrubber-width-default * 2);
     }
 
     + span:after {
@@ -435,14 +435,14 @@ Slider C
   input {
 
     + span {
-      padding-left: $scrubber-width-default * 2;
+      padding-left: calc($scrubber-width-default * 2);
     }
 
     + span:before {
       height: 2px !important; // needs to be
-      top: $scrubber-width-default / 2;
+      top: calc($scrubber-width-default / 2);
       box-shadow: none;
-      width: $scrubber-width-default * 2;
+      width: calc($scrubber-width-default * 2);
       background: $gray-500;
     }
 
@@ -481,14 +481,14 @@ Slider C Sizes
   &.checkbox-slider-sm {
 
     input + span:before {
-      top: $scrubber-width-sm / 2 - 1;
+      top: calc($scrubber-width-sm / 2) - 1;
     }
   }
 
   &.checkbox-slider-md {
 
     input + span:before {
-      top: $scrubber-width-md / 2 - 1;
+      top: calc(calc($scrubber-width-md / 2)) - 1;
     }
 
     input + span:after {
@@ -500,7 +500,7 @@ Slider C Sizes
   &.checkbox-slider-lg {
 
     input + span:before {
-      top: $scrubber-width-lg / 2 - 1; //correct border
+      top: calc(calc($scrubber-width-lg / 2)) - 1; //correct border
     }
     input + span:after {
       width: $scrubber-width-lg;
@@ -516,14 +516,14 @@ Slider C Sizes
   &.checkbox-slider-sm {
 
     input + span:before {
-      top: $scrubber-width-sm  / 2 + 5;
+      top: calc($scrubber-width-sm  / 2) + 5;
     }
   }
 
   &.checkbox-slider-md {
 
     input + span:before {
-      top: $scrubber-width-md  / 2 + 5;
+      top: calc($scrubber-width-md  / 2) + 5;
     }
 
 
@@ -532,7 +532,7 @@ Slider C Sizes
   &.checkbox-slider-lg {
 
     input + span:before {
-      top: $scrubber-width-lg / 2 + 5;
+      top: calc(calc($scrubber-width-lg / 2)) + 5;
     }
 
   }
@@ -562,17 +562,17 @@ Slider C-weight
 
   &.checkbox-slider-sm {
     input + span:before {
-      top:$scrubber-width-sm /2;
+      top:calc($scrubber-width-sm /2);
     }
   }
   &.checkbox-slider-md {
     input + span:before {
-      top:$scrubber-width-md /2;
+      top:calc($scrubber-width-md /2);
     }
   }
   &.checkbox-slider-lg {
     input + span:before {
-      top:$scrubber-width-lg /2;
+      top:calc($scrubber-width-lg /2);
     }
   }
 
